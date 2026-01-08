@@ -8,7 +8,7 @@ resource "local_file" "ansible_inventory" {
     tags = proxmox_virtual_environment_vm.test.tags
   })
 
-filename = "${path.root}/../ansible/inventory/hosts.ini"
+filename = "${path.root}/../../ansible/inventory/hosts.ini"
 
 }
 
