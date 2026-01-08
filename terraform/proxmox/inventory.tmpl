@@ -1,0 +1,13 @@
+[all]
+${vm_name} ansible_host=${vm_ipv4} ansible_user=sysdev
+
+%{ if contains(tags, "os_ubuntu") }
+[ubuntu]
+${vm_name}
+%{ endif }
+
+%{ if contains(tags, "linux") }
+[linux]
+${vm_name}
+%{ endif }
+
