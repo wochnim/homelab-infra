@@ -1,0 +1,4 @@
+prometheus_version: "2.49.1"
+prometheus_port: 9090
+prometheus_data_dir: /var/lib/prometheus
+

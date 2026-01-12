@@ -15,3 +15,10 @@
           - curl
           - vim
         state: present
+    
+- name: Install node_exporter
+  hosts: linux_servers
+  become: true
+  roles:
+   - node_exporter
+
